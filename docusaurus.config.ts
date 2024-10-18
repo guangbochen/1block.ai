@@ -35,7 +35,11 @@ const config = {
     localeConfigs: {
       en: {
         htmlLang: 'en-GB',
+        label: 'English'
       },
+      cn: {
+        label: '简体中文'
+      }
     },
   },
 
