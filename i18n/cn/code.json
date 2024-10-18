@@ -341,5 +341,29 @@
   },
   "home.features.title": {
     "message": "私有化AI管理平台，不仅仅是GPU"
+  },
+  "home.features.install.title": {
+    "message": "安装简易"
+  },
+  "home.feature.install.description": {
+    "message": "在 x86_64 和 ARM64 架构上均可开箱即用，获得流畅的安装体验。"
+  },
+  "home.feature.management.title": {
+    "message": "基础设施、大模型和应用程序的生命周期管理"
+  },
+  "home.feature.management.description": {
+    "message": "提供统一的界面，使开发人员和非开发人员都可以轻松管理基础设施、机器学习集群、模型和用户工作负载。"
+  },
+  "home.feature.agnostic.title": {
+    "message": "云无关、学习框架无关"
+  },
+  "home.feature.agnostic.description": {
+    "message": "可在公共云和本地服务器之间无缝运行。与任何机器学习框架兼容。"
+  },
+  "home.feature.private.title": {
+    "message": "私有、边缘和分支环境的理想选择"
+  },
+  "home.feature.private.description": {
+    "message": "支持私有部署，优化资源以在边缘和分支网络中运行模型和工作负载。"
   }
 }

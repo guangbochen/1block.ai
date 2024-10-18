@@ -3,19 +3,23 @@ import Slider from "react-slick";
 import { CodeBlock } from 'react-code-blocks';
 import useBaseUrl from "@docusaurus/core/lib/client/exports/useBaseUrl";
 import './feature.scss';
-import Translate from '@docusaurus/Translate';
+import Translate, {translate} from '@docusaurus/Translate';
 
 const FeatureList = [
   {
     id: 0,
-    title: 'Easy to Install',
+    title: <Translate id="home.features.install.title">Easy to Install</Translate>,
     classVal: "col col--12 hero shadow--lw",
     description: (
       <>
-        Works out of the box on both x86_64 and ARM64 architectures for a smooth installation experience.
+        {translate({
+          id: "home.feature.install.description",
+          message: "Works out of the box on both x86_64 and ARM64 architectures for a smooth installation experience.",
+        })}
       </>
     ),
-    code: `## To bootstrap a new cluster
+  code:
+        `## To bootstrap a new cluster
 curl -sfL https://get-llmos.1block.ai | sh -s - --cluster-init --token mytoken
 
 ## To monitor installation logs, run 
@@ -27,11 +31,14 @@ curl -sfL https://get-llmos.1block.ai | LLMOS_SERVER=https://server-url:6443 LLM
   },
   {
     id: 1,
-    title: 'Infrastructure, LLM & Application Lifecycle Management',
+    title: <Translate id="home.feature.management.title">Infrastructure, LLM & Application Lifecycle Management</Translate>,
     classVal: "col col--12 hero hero--dark",
     description: (
       <>
-        Offers a unified interface that makes it easy for both developers and non-developers to manage infrastructure, ML clusters, models, and user workloads.
+        {translate({
+          id: "home.feature.management.description",
+          message: "Offers a unified interface that makes it easy for both developers and non-developers to manage infrastructure, ML clusters, models, and user workloads.",
+        })}
       </>
     ),
     carousel: {
@@ -53,23 +60,29 @@ curl -sfL https://get-llmos.1block.ai | LLMOS_SERVER=https://server-url:6443 LLM
   },
   {
     id: 2,
-    title: 'Cloud-Agnostic & ML Framework-Agnostic',
+    title: <Translate id="home.feature.agnostic.title">'Cloud-Agnostic & ML Framework-Agnostic'</Translate>,
     classVal: "col col--12 hero shadow--lw",
     Svg: require('@site/static/img/multi-cloud.svg').default,
     description: (
       <>
-        Works seamlessly across public clouds and on-premise servers. Compatible with any machine learning framework.
+        {translate({
+          id: "home.feature.agnostic.description",
+          message: "Works seamlessly across public clouds and on-premise servers. Compatible with any machine learning framework.",
+        })}
       </>
     ),
   },
   {
     id: 3,
-    title: 'Private, and Ideal for Edge & Branch',
+    title: <Translate id="home.feature.private.title">'Private, and Ideal for Edge & Branch'</Translate>,
     classVal: "col col--12 hero hero--primary",
     Svg: require('@site/static/img/feature_branch.svg').default,
     description: (
       <>
-        Supports private deployments with optimized resources for running models and workloads in edge and branch networks. It also allows for horizontal scaling to meet future business needs.
+        {translate({
+          id: "home.feature.private.description",
+          message: "Supports private deployments with optimized resources for running models and workloads in edge and branch networks. It also allows for horizontal scaling to meet future business needs.",
+        })}
       </>
     ),
   },
